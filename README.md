@@ -4,7 +4,7 @@ A Sliding Window Filter with GNSS-State Constraint for RTK-Visual-Inertial Navig
 
 Authors: Xiaohong Huang, Cui Yang
 
-**RTK-Visual-Inertial-Navigation-Fast** is a fast version of  [RTK-Visual-Inertial-Navigation](https://github.com/xiaohong-huang/RTK-Visual-Inertial-Navigation). The purpose of this project is to optimize the efficiency of [RTK-Visual-Inertial-Navigation](https://github.com/xiaohong-huang/RTK-Visual-Inertial-Navigation) so that it can run on embedded devices, such as Jetson-TX2.
+**RTK-Visual-Inertial-Navigation-Fast** is a fast version of  [RTK-Visual-Inertial-Navigation](https://github.com/xiaohong-huang/RTK-Visual-Inertial-Navigation). The purpose of this project is to improve the efficiency of [RTK-Visual-Inertial-Navigation](https://github.com/xiaohong-huang/RTK-Visual-Inertial-Navigation) so that it can run on embedded devices, such as Jetson-TX2.
 
 
 **RTK-Visual-Inertial-Navigation-Fast** is a navigation system that tightly fuses GNSS, visual, and inertial measurements. It uses a sliding window filter (SWF) with GNSS-state constraints for sensor fusion. That is, the GNSS states (i.e., position, orientation, and velocity of the body and inertial biases at the time of capturing GNSS measurements) are retained in the SWF to construct more appropriate constraints between measurements and states. It also uses the parallel elimination strategy in a predefined elimination ordering, which can solve the Gauss-Newton problem and simultaneously obtain the covariance for ambiguity resolution. The system can perform the following types of navigation:
