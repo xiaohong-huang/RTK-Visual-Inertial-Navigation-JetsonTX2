@@ -4,7 +4,7 @@ A Sliding Window Filter with GNSS-State Constraint for RTK-Visual-Inertial Navig
 
 Authors: Xiaohong Huang, Cui Yang
 
-**RTK-Visual-Inertial-Navigation-Fast** is a fast version of  [RTK-Visual-Inertial-Navigation](https://github.com/xiaohong-huang/RTK-Visual-Inertial-Navigation). The purpose of this project is to improve the efficiency of [RTK-Visual-Inertial-Navigation](https://github.com/xiaohong-huang/RTK-Visual-Inertial-Navigation) so that it can run on embedded devices, such as Jetson-TX2. The RTK-Visual-Inertial-Navigation-Fast can achieve real-time state estimation with a state update rate of 20-25Hz in Jetson-Tx2.
+**RTK-Visual-Inertial-Navigation-Fast** is a fast version of  [RTK-Visual-Inertial-Navigation](https://github.com/xiaohong-huang/RTK-Visual-Inertial-Navigation). The purpose of this project is to improve the efficiency of [RTK-Visual-Inertial-Navigation](https://github.com/xiaohong-huang/RTK-Visual-Inertial-Navigation) so that it can run on embedded devices, such as Jetson-TX2. The RTK-Visual-Inertial-Navigation-Fast can achieve real-time state estimation with a state update rate of 20~25Hz in Jetson-Tx2.
 
 ![image](https://github.com/xiaohong-huang/RTK-Visual-Inertial-Navigation-Fast/blob/main/fig/jetson-tx2.png)
 
