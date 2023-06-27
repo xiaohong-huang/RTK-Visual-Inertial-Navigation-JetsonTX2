@@ -22,7 +22,7 @@ Authors: Xiaohong Huang, Cui Yang
 This package requires some features of C++11.
 
 ### 1.2 ROS
-This package is developed under [ROS Kinetic](http://wiki.ros.org/kinetic) environment.
+This package is developed under [ROS Melodic](http://wiki.ros.org/melodic) environment.
 
 ### 1.3 Opencv 3 with CUDA
 Our code uses [Opencv 3](https://github.com/opencv/opencv/tree/3.4) and [Opencv extra modules](https://github.com/opencv/opencv_contrib/tree/3.4) for image process.
