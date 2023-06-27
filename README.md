@@ -4,7 +4,7 @@ A Sliding Window Filter with GNSS-State Constraint for RTK-Visual-Inertial Navig
 
 Authors: Xiaohong Huang, Cui Yang
 
-**RTK-Visual-Inertial-Navigation-Fast** is a fast version of  [RTK-Visual-Inertial-Navigation](https://github.com/xiaohong-huang/RTK-Visual-Inertial-Navigation). The purpose of this project is to improve the efficiency of [RTK-Visual-Inertial-Navigation](https://github.com/xiaohong-huang/RTK-Visual-Inertial-Navigation) so that it can run on embedded devices, such as Jetson-TX2. The RTK-Visual-Inertial-Navigation-Fast can achieve real-time state estimation with a state update rate of 20~25Hz in Jetson-Tx2.
+**RTK-Visual-Inertial-Navigation-Fast** is a fast version of  [RTK-Visual-Inertial-Navigation](https://github.com/xiaohong-huang/RTK-Visual-Inertial-Navigation). The purpose of this project is to improve the efficiency of [RTK-Visual-Inertial-Navigation](https://github.com/xiaohong-huang/RTK-Visual-Inertial-Navigation) so that it can run on embedded devices, such as [Jetson-TX2](https://developer.nvidia.com/embedded/jetson-tx2). The RTK-Visual-Inertial-Navigation-Fast can achieve real-time state estimation with a state update rate of 20~25Hz in Jetson-Tx2.
 
 ![image](https://github.com/xiaohong-huang/RTK-Visual-Inertial-Navigation-Fast/blob/main/fig/jetson-tx2.png)
 
@@ -47,10 +47,18 @@ sh build.sh
 ```
 The modified version will only be installed in the current folder. So you don't need to worry that the installation will change the settings of your computer.
 
- Then build the package with:
+Then build the package with:
 ```
 cd ~/catkin_ws/
 catkin_make
+```
+
+For the Jetson-TX2 paltform, we use the Quad-Core ARM® Cortex®-A57 MPCore for state optimization, and use one of the Denver core for front-end process. To enable this setting, you can set the Jetson-TX2 to MAXN power mode by:
+```
+sudo nvpmodel -m 0
+sudo nvpmodel -q verbose
+sudo jetson_clocks --fan
+sudo jetson_clocks
 ```
 
 
