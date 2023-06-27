@@ -53,7 +53,7 @@ cd ~/catkin_ws/
 catkin_make
 ```
 
-For the Jetson-TX2 paltform, we use the Quad-Core ARM® Cortex®-A57 MPCore for state optimization, and use one of the Denver core for front-end process. To enable this setting, you can set the Jetson-TX2 to MAXN power mode by:
+For the Jetson-TX2 paltform, we use the Quad-Core ARM® Cortex®-A57 MPCore for state optimization, and use one of the Denver core for front-end processing. To enable this setting, you can set the Jetson-TX2 to MAXN power mode by:
 ```
 sudo nvpmodel -m 0
 sudo nvpmodel -q verbose
