@@ -1,12 +1,12 @@
-# RTK-Visual-Inertial-Navigation-Fast
+# RTK-Visual-Inertial-Navigation-JetsonTX2
 
 A Sliding Window Filter with GNSS-State Constraint for RTK-Visual-Inertial Navigation. [paper link]()
 
 Authors: Xiaohong Huang, Cui Yang
 
-**RTK-Visual-Inertial-Navigation-Fast** is a fast version of  [RTK-Visual-Inertial-Navigation](https://github.com/xiaohong-huang/RTK-Visual-Inertial-Navigation). The purpose of this project is to improve the efficiency of [RTK-Visual-Inertial-Navigation](https://github.com/xiaohong-huang/RTK-Visual-Inertial-Navigation) so that it can run on embedded devices, such as [Jetson-TX2](https://developer.nvidia.com/embedded/jetson-tx2). The RTK-Visual-Inertial-Navigation-Fast can achieve real-time state estimation with a state update rate of 20~25Hz in Jetson-Tx2.
+**RTK-Visual-Inertial-Navigation-JetsonTX2** is a fast version of  [RTK-Visual-Inertial-Navigation](https://github.com/xiaohong-huang/RTK-Visual-Inertial-Navigation). The purpose of this project is to improve the efficiency of [RTK-Visual-Inertial-Navigation](https://github.com/xiaohong-huang/RTK-Visual-Inertial-Navigation) so that it can run on embedded devices, such as [Jetson-TX2](https://developer.nvidia.com/embedded/jetson-tx2). The RTK-Visual-Inertial-Navigation-JetsonTX2 can achieve real-time state estimation with a state update rate of 20~25Hz in Jetson-Tx2.
 
-![image](https://github.com/xiaohong-huang/RTK-Visual-Inertial-Navigation-Fast/blob/main/fig/jetson-tx2.png)
+![image](https://github.com/xiaohong-huang/RTK-Visual-Inertial-Navigation-JetsonTX2/blob/main/fig/jetson-tx2.png)
 
 **RTK-Visual-Inertial-Navigation** is a navigation system that tightly fuses GNSS, visual, and inertial measurements. It uses a sliding window filter (SWF) with GNSS-state constraints for sensor fusion. That is, the GNSS states (i.e., position, orientation, and velocity of the body and inertial biases at the time of capturing GNSS measurements) are retained in the SWF to construct more appropriate constraints between measurements and states. It also uses the parallel elimination strategy in a predefined elimination ordering, which can solve the Gauss-Newton problem and simultaneously obtain the covariance for ambiguity resolution. The system can perform the following types of navigation:
 
@@ -27,11 +27,11 @@ This package is developed under [ROS Melodic](http://wiki.ros.org/melodic) envir
 ### 1.3 Opencv 3 with CUDA
 Our code uses [Opencv 3](https://github.com/opencv/opencv/tree/3.4) and [Opencv extra modules](https://github.com/opencv/opencv_contrib/tree/3.4) for image process.
 
-## 2. Build RTK-Visual-Inertial-Navigation-Fast
+## 2. Build RTK-Visual-Inertial-Navigation-JetsonTX2
 Clone the repository to your catkin workspace (for example `~/catkin_ws/`):
 ```
 cd ~/catkin_ws/src/
-git clone https://github.com/xiaohong-huang/RTK-Visual-Inertial-Navigation-Fast.git
+git clone https://github.com/xiaohong-huang/RTK-Visual-Inertial-Navigation-JetsonTX2.git
 ```
 Clone the packages for interfacing ROS with OpenCV:
 ```
@@ -45,7 +45,7 @@ sudo apt-get install cmake
 # Eigen3
 sudo apt-get install libeigen3-dev
 # Ceres-Solver-Modified
-cd ~/catkin_ws/src/RTK-Visual-Inertial-Navigation-Fast
+cd ~/catkin_ws/src/RTK-Visual-Inertial-Navigation-JetsonTX2
 tar -xvf ceres-solver-modified.tar
 cd ceres-solver-modified/
 sh build.sh
