@@ -828,8 +828,7 @@ void SWFOptimization::MeasurementProcess() {
             modeflag = ImagFrame;
         }
 
-        if (cur_time <= prev_time2 || cur_time - prev_time2 <= 0.005) { //
-            ASSERT(modeflag == ImagFrame);
+        if (cur_time <= prev_time2 || cur_time - prev_time2 <= 0.005||(USE_IMU&&acc_buf.front().first>cur_time)) { //
             if (modeflag == GnssFrame) {
                 mutex_gnss.lock();
                 rover_buf.pop_front();
