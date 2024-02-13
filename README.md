@@ -1,8 +1,8 @@
 # RTK-Visual-Inertial-Navigation-JetsonTX2
 
-A Sliding Window Filter with GNSS-State Constraint for RTK-Visual-Inertial Navigation. [paper link]()
+A Sliding Window Filter with GNSS-State Constraint for RTK-Visual-Inertial Navigation. [paper link](https://ieeexplore.ieee.org/document/10432782)
 
-Authors: Xiaohong Huang, Cui Yang
+Authors: Xiaohong Huang, Cui Yang, Miaowen Wen
 
 **RTK-Visual-Inertial-Navigation-JetsonTX2** is a fast version of  [RTK-Visual-Inertial-Navigation](https://github.com/xiaohong-huang/RTK-Visual-Inertial-Navigation). The purpose of this project is to improve the efficiency of [RTK-Visual-Inertial-Navigation](https://github.com/xiaohong-huang/RTK-Visual-Inertial-Navigation) so that it can run on embedded devices, such as [Jetson-TX2](https://developer.nvidia.com/embedded/jetson-tx2). The RTK-Visual-Inertial-Navigation-JetsonTX2 can achieve real-time state estimation with a state update rate of 20~25Hz in Jetson-Tx2.
 
